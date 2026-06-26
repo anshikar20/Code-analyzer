@@ -1,0 +1,20 @@
+[
+  {
+    "name": "avoid eval",
+    "language": "python",
+    "type": "contains",
+    "pattern": "eval(",
+    "severity": "warning",
+    "message": "you can use some other thing rather than eval",
+    "enabled": false
+  },
+  {
+    "name": "print not allowed ",
+    "language": "any",
+    "type": "contains",
+    "pattern": "print(",
+    "severity": "warning",
+    "message": "no print",
+    "enabled": false
+  }
+]

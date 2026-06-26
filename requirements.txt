@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+pylint
+flake8
+bandit
+mypy
+pip-audit

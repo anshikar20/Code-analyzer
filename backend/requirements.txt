@@ -1,0 +1,19 @@
+# Run the following to install all requirements:
+# pip install -r backend/requirements.txt
+
+# Core
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# Analysis Tools
+pylint
+flake8
+bandit
+mypy
+pip-audit
+
+# AI
+google-generativeai

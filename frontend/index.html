@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Source Code Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+         
+        <div class="top-actions">
+          <button class="theme-toggle-btn" onclick="toggleTheme()" id="themeToggleBtn">
+        🌙 Dark Mode
+                </button>
+         </div>  
+        <div class="hero-section">
+        <div class="hero-content">
+        <div class="hero-badge">AI-ready Developer Tool</div>
+
+        <h1>Realtime Source Code Analyzer</h1>
+
+        <p class="subtitle">
+            Analyze code for syntax, quality, style, security, type issues, multi-language checks, and custom project rules.
+        </p>
+
+        <div class="feature-pills">
+            <span>FastAPI Backend</span>
+            <span>Realtime Scan</span>
+            <span>Custom Rules</span>
+            <span>Python • Java • C++</span>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="code-window">
+            <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <pre>
+def analyze(code):
+    run_ast_check(code)
+    run_security_scan(code)
+    return issues
+            </pre>
+        </div>
+
+        <div class="floating-card card-one">Syntax ✓</div>
+        <div class="floating-card card-two">Security Scan</div>
+        <div class="floating-card card-three">Custom Rules</div>
+    </div>
+</div>
+
+        <!-- Language Selection -->
+        <label for="languageSelect">Select Language:</label>
+        <select id="languageSelect">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="cpp">C++</option>
+        </select>
+
+        <br><br>
+
+        <!-- Code Input -->
+        <label for="codeInput">Enter Code:</label>
+        <textarea id="codeInput" placeholder="Write or paste your code here...">print('Hello')</textarea>
+
+        <!-- Buttons and Options -->
+        <div class="button-row">
+            <button onclick="analyzeFullCode()">Full Analyze</button>
+
+            <label class="custom-rule-toggle">
+                <input type="checkbox" id="customRulesToggle">
+                Run Custom Rules
+            </label>
+
+            <span id="modeText">Mode: Waiting</span>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="summary" id="summaryBox">
+            <h2>Summary</h2>
+            <p>No analysis done yet.</p>
+        </div>
+
+        <!-- Issues Section -->
+        <div class="results" id="resultBox">
+            <h2>Issues</h2>
+            <p>Results will appear here.</p>
+        </div>
+
+        <!-- Dependency Analysis Section -->
+       <div class="dependency-panel">
+          <h2>Dependency Analysis</h2>
+          <p class="section-note">
+        Check installed Python packages for known dependency vulnerabilities.
+           </p>
+
+           <button onclick="checkDependencies()">Check Dependencies</button>
+
+        <div id="dependencyResultBox" class="dependency-results">
+         <p>No dependency scan done yet.</p>
+          </div>
+        </div>
+        <!-- Custom Rule Manager -->
+        <div class="custom-rules-panel">
+            <h2>Custom Rule Manager</h2>
+            <p class="section-note">
+                Add project-specific rules without changing backend code.
+            </p>
+
+            <div class="rule-form">
+
+                <input type="text" id="ruleName" placeholder="Rule name">
+
+                <select id="ruleLanguage">
+                    <option value="any">Any Language</option>
+                    <option value="python">Python</option>     
+                    <option value="java">Java</option>
+                    <option value="cpp">C++</option>
+                </select>
+
+                <select id="ruleType">
+                    <option value="contains">Contains</option>
+                    <option value="regex">Regex</option>
+                </select>
+
+                <select id="ruleSeverity">
+                    <option value="warning">Warning</option>
+                    <option value="error">Error</option>
+                    <option value="info">Info</option>
+                </select>
+
+                <input type="text" id="rulePattern" placeholder="Pattern e.g. print(">
+
+                <input type="text" id="ruleMessage" placeholder="Message to show when rule matches">
+
+                <label class="custom-rule-toggle">
+                    <input type="checkbox" id="ruleEnabled" checked>
+                    Enabled
+                </label>
+
+                <button onclick="saveCustomRule()">Save Custom Rule</button>
+                <button onclick="loadCustomRules()" class="secondary-btn">Refresh Rules</button>
+
+            </div>
+
+            <div id="customRulesList" class="custom-rules-list">
+                <p>No custom rules loaded yet.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

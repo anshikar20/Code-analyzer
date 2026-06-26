@@ -1,0 +1,162 @@
+[
+  {
+    "timestamp": "2026-06-26T05:31:24.358144",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T05:32:52.066257",
+    "total_issues": 4,
+    "security": 3,
+    "quality": 1,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T05:33:35.008646",
+    "total_issues": 8,
+    "security": 4,
+    "quality": 1,
+    "performance": 3,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T05:34:39.094398",
+    "total_issues": 46,
+    "security": 8,
+    "quality": 4,
+    "performance": 4,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T05:34:59.559489",
+    "total_issues": 4,
+    "security": 3,
+    "quality": 1,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:11:17.826998",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:29:13.470502",
+    "total_issues": 8,
+    "security": 4,
+    "quality": 1,
+    "performance": 3,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:29:13.538200",
+    "total_issues": 4,
+    "security": 3,
+    "quality": 1,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:29:23.482035",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:45:06.265687",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:45:10.393955",
+    "total_issues": 4,
+    "security": 3,
+    "quality": 1,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:51:31.725729",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:51:52.518567",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:51:54.814259",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:52:00.277068",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  },
+  {
+    "timestamp": "2026-06-26T06:52:08.612942",
+    "total_issues": 2,
+    "security": 2,
+    "quality": 0,
+    "performance": 0,
+    "style": 0,
+    "structure": 0,
+    "mode": "full"
+  }
+]

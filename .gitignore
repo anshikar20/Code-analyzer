@@ -1,0 +1,28 @@
+# Node
+node_modules/
+dist/
+out/
+build/
+.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code Extension
+*.vsix
+.vscode-test/
+
+# Omni Analyzer generated files
+.analyzer.json

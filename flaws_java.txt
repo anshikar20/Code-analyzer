@@ -1,0 +1,11 @@
+162: // ❌ QUALITY: NullPointerException risk if quantityOnHand or reorderLevel is null
+303: // ❌ QUALITY: Minimal validation — no regex on SKU, no negative price check
+348: // ❌ QUALITY: Connection created once and never pooled or refreshed
+369: // ❌ QUALITY: Exception swallowed
+439: // ❌ PERFORMANCE: Fetching ALL products into memory — no pagination
+550: // ❌ PERFORMANCE: No-TTL in-memory cache with no bound
+601: // ❌ PERFORMANCE: Returns all products — no pagination support
+615: return repository.findAll().stream() // ❌ PERFORMANCE: Loads ALL then filters
+634: List<Product> all = repository.findAll(); // ❌ PERFORMANCE: Memory issue for large datasets
+775: // ❌ QUALITY: Manual pagination in controller, should be in repository
+845: // ❌ QUALITY: No input validation before calling service

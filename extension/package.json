@@ -1,0 +1,61 @@
+{
+  "name": "omni-analyzer",
+  "displayName": "Omni Analyzer",
+  "description": "Real-time source code analyzer and AI assistant",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Linters"
+  ],
+  "activationEvents": [
+    "onLanguage:python",
+    "onLanguage:java",
+    "onLanguage:cpp"
+  ],
+  "main": "./client/out/extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Omni Analyzer",
+      "properties": {
+        "omniAnalyzer.enableCloudAI": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable cloud AI features (e.g., Gemini) for advanced refactoring and explanations."
+        },
+        "omniAnalyzer.geminiApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API Key for Gemini if Cloud AI is enabled."
+        },
+        "omniAnalyzer.model": {
+          "type": "string",
+          "default": "gemini-2.5-flash",
+          "enum": [
+            "gemini-2.5-flash",
+            "gemini-2.5-pro",
+            "gemini-2.0-flash",
+            "gemini-3.5-flash",
+            "gemini-pro-latest"
+          ],
+          "description": "The Gemini model to use for AI explanations and code reviews."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w",
+    "test": "npm run test --prefix server",
+    "postinstall": "cd client && npm install && cd ../server && npm install && cd .."
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,17 @@
+111: # ❌ TYPE ERROR: comparing str to int
+142: # ❌ TYPE ERROR: no return type annotation inconsistency
+352: pass  # ❌ QUALITY: Silently swallowing exceptions
+455: # ❌ QUALITY: No input validation (empty username, invalid email, weak password)
+467: # ❌ QUALITY: No password strength enforcement
+494: # ❌ PERFORMANCE: In-memory cache with no TTL or size limit
+515: # ❌ TYPE ERROR: price could be a string from JSON, no explicit cast
+567: return self.db.search_products("")  # ❌ BUG: ignores category, searches all!
+571: # ❌ QUALITY: LRU cache on mutable database data; stale cache issue
+581: # ❌ QUALITY: No escaping of commas in product names
+726: # ❌ PERFORMANCE: N+1 query problem — fetches orders one by one
+810: # ❌ QUALITY: Creating new SMTP connection per email (should pool)
+820: # ❌ QUALITY: Generic exception catch, no specific handling
+1100: # ❌ PERFORMANCE: Loading all orders into memory at once
+1199: # ❌ QUALITY: Broad exception catch without re-raise
+1218: # ❌ PERFORMANCE: Blocking sleep in main thread for polling
+1276: # ❌ QUALITY: Overly simplistic email validation

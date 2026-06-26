@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "extensionHost",
+      "request": "launch",
+      "name": "Launch OmniAnalyzer Extension",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceRoot}/extension"
+      ],
+      "outFiles": [
+        "${workspaceRoot}/extension/client/out/**/*.js",
+        "${workspaceRoot}/extension/server/out/**/*.js"
+      ],
+      "preLaunchTask": "npm: compile - extension"
+    }
+  ]
+}
