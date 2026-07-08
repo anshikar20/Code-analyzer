@@ -3,6 +3,11 @@
   "displayName": "Omni Analyzer",
   "description": "Real-time source code analyzer and AI assistant",
   "version": "1.0.0",
+  "publisher": "anshikar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anshikar20/Code-analyzer.git"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },

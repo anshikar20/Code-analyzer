@@ -1,0 +1,9 @@
+{
+  "name": "pdf_gen",
+  "dependencies": {
+    "md-to-pdf": "^5.2.4"
+  },
+  "overrides": {
+    "puppeteer": "22.0.0"
+  }
+}
